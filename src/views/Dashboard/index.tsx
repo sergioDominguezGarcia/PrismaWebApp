@@ -1,18 +1,20 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react'
 import Header from '../../components/Header'
-import * as S from "./styles";
+import Card from '../../components/Card'
+import { cards } from './constants'
+import * as S from './styles'
 
 const Dashboard: FC = () => {
+  return (
+    <S.DashboardContainer>
+      <Header />
+      
+      <S.DashboardContent>
+        {cards.map(card => (<Card />))}
+      </S.DashboardContent>
 
-return(
-    <div>
-        <Header />
-        <S.DashboardContent>
-        
-        </S.DashboardContent>
-    </div>
-
-)
+    </S.DashboardContainer>
+  )
 }
 
-export default memo(Dashboard);
+export default memo(Dashboard)

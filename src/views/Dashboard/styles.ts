@@ -1,12 +1,19 @@
 import styled from 'styled-components'
 
-export const DashboardContent = styled.div`
-  /* margin-top: 1rem; */
-  /* padding: 16px; */
+export const DashboardContainer = styled.div`
+  /* border: 1px solid red; */
 `
-// export const PostContainer = styled.div`
 
-// `;
+export const DashboardContent = styled.div`
+  background-color: gray;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  height: 100vh;
+  margin-top: auto;
+  padding: 1rem;
+`
+
 // export const Cards = styled.div`
 
 // `;
